@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: 100%;
 }
 .body {
@@ -12,10 +20,33 @@
     width: 400px;
     height: 300px;
     background-size: cover;
-    animation-name: anim;
-    animation-duration: 8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: anim;
+            animation-name: anim;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes anim {
+    0% {
+        left: 0;
+        background-image: url(../images/car-yellow.png);
+    }
+    50% {
+       left: 100%;
+       background-image: url(../images/car-yellow.png);
+    }
+    51% {
+        left: 100%;
+        background-image: url(../images/car-yellow1.png);
+    }
+    100% {
+        left: 0;
+        background-image: url(../images/car-yellow1.png);
+    }
 }
 
 @keyframes anim {
@@ -41,10 +72,37 @@
     width: 400px;
     height: 300px;
     background-size: cover;
-    animation-name: anim1;
-    animation-duration: 8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: anim1;
+            animation-name: anim1;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes anim1 {
+    0% {
+        top: 50%;
+        right: 0;
+        background-image: url(../images/car-red.png);
+    }
+    50% {
+       top: 50%;
+       right: 100%;
+       background-image: url(../images/car-red.png);
+    }
+    51% {
+        top: 50%;
+        right: 100%;
+        background-image: url(../images/car-red1.png);
+    }
+    100% {
+        top: 50%;
+        right: 0;
+        background-image: url(../images/car-red1.png);
+    }
 }
 
 @keyframes anim1 {
